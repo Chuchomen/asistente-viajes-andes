@@ -22,6 +22,7 @@
 body {
   min-height: 100vh;
   margin: 0;
+  padding: 24px 0;
   color: var(--ink);
   background:
     radial-gradient(circle at 8% 0%, rgba(15, 114, 133, 0.14), transparent 42%),
@@ -36,8 +37,9 @@ input {
 
 .layout {
   width: min(1180px, calc(100% - 32px));
-  min-height: calc(100vh - 48px);
-  margin: 24px auto;
+  height: calc(100vh - 48px);
+  min-height: 540px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(320px, 0.94fr) minmax(380px, 1.16fr);
   gap: 20px;
@@ -56,7 +58,10 @@ input {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 32px;
+  padding: 28px;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .brand {
@@ -128,9 +133,9 @@ h2 {
 .destination {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
-  padding: 12px 14px;
+  padding: 9px 12px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--white);
@@ -153,11 +158,11 @@ h2 {
 .destination-emoji {
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
-  border-radius: 12px;
-  font-size: 1.3rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
   background: var(--accent-soft);
 }
 
@@ -224,7 +229,7 @@ h2 {
 /* ---------- Chat panel ---------- */
 
 .chat-panel {
-  min-height: 660px;
+  min-height: 0;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   overflow: hidden;
@@ -313,7 +318,9 @@ h2 {
   flex-direction: column;
   gap: 12px;
   padding: 20px;
+  min-height: 0;
   overflow-y: auto;
+  scrollbar-width: thin;
   background:
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
     radial-gradient(circle at top left, rgba(15, 114, 133, 0.08), transparent 40%);
@@ -541,19 +548,27 @@ h2 {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
+  body {
+    padding: 12px 0;
+  }
+
   .layout {
     grid-template-columns: 1fr;
     width: min(100% - 20px, 680px);
-    margin: 12px auto;
+    height: auto;
+    min-height: 0;
+    margin: 0 auto;
   }
 
   .chat-panel {
     order: -1;
-    min-height: 78vh;
+    height: calc(100dvh - 24px);
+    min-height: 480px;
   }
 
   .info-panel {
     padding: 24px;
+    overflow-y: visible;
   }
 }
 

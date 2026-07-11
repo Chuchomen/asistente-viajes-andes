@@ -37,7 +37,7 @@ def normalize(text):
 
 
 def load_knowledge_base(path=KNOWLEDGE_PATH):
-    with open(path, "r", encoding="utf-8") as file:
+    with open(path, "r", encoding="utf-8-sig") as file:
         return json.load(file)
 
 
@@ -89,5 +89,5 @@ def fallback_answer():
     return (
         "No tengo ese dato en la base de conocimiento de Viajes Andes. "
         "Para no inventarte informacion, te recomiendo escribir al WhatsApp "
-        "310 245 7788 y un asesor lo confirma contigo."
+        "311 628 9002 y un asesor lo confirma contigo."
     )
