@@ -22,7 +22,12 @@
     <main class="layout">
       <section class="panel info-panel">
         <div class="brand">
-          <span class="brand-mark" aria-hidden="true">&#9968;</span>
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
+              <circle cx="17.5" cy="5" r="1.6" />
+            </svg>
+          </span>
           <div>
             <strong>Viajes Andes</strong>
             <small>Agencia boutique &middot; Medell&iacute;n</small>
@@ -32,80 +37,116 @@
         <h1>Tu pr&oacute;ximo viaje empieza con una pregunta</h1>
         <p class="lead">
           Preg&uacute;ntale a <strong>AndesBot</strong> por paquetes, precios,
-          formas de pago, reservas y pol&iacute;ticas. Responde solo con datos
-          verificados del negocio y, si no sabe algo, lo admite.
+          pagos y reservas. Responde solo con datos verificados y, si no sabe
+          algo, lo admite.
         </p>
 
         <h2>Destinos destacados</h2>
         <div class="destinations">
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cartagena y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#127958;&#65039;</span>
+            <span class="thumb thumb-cartagena" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="9" r="3" />
+                <path d="M3 17c3-2.4 6-2.4 9 0s6 2.4 9 0" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>Cartagena Esencial</strong>
-              <small>3 noches &middot; ciudad amurallada</small>
+              <small>desde $1.450.000</small>
             </span>
-            <span class="destination-price">desde $1.450.000</span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan al Eje Cafetero y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#127807;</span>
+            <span class="thumb thumb-eje" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14z" />
+                <path d="M6 19c3-5 7-9 10-11" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>Eje Cafetero Natural</strong>
-              <small>3 noches &middot; Valle del Cocora</small>
+              <small>desde $1.180.000</small>
             </span>
-            <span class="destination-price">desde $1.180.000</span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a San Andres y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#128032;</span>
+            <span class="thumb thumb-sanandres" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 20c0-5 .5-8 1-10" />
+                <path d="M14 10c-2-3-5-4-8-2.5" />
+                <path d="M14 10c-.3-3.4 1.5-6 5-6.5" />
+                <path d="M14 10c3-1.6 6-.6 7.5 1.5" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>San Andr&eacute;s Azul</strong>
-              <small>4 noches &middot; Johnny Cay y acuario</small>
+              <small>desde $1.690.000</small>
             </span>
-            <span class="destination-price">desde $1.690.000</span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Peru y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#127956;&#65039;</span>
+            <span class="thumb thumb-peru" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 19 8 8l4 7 3-4.5L21 19z" />
+                <circle cx="18.5" cy="6" r="1.6" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>Per&uacute; M&aacute;gico</strong>
-              <small>5 noches &middot; Machu Picchu</small>
+              <small>desde $3.850.000</small>
             </span>
-            <span class="destination-price">desde $3.850.000</span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cancun y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#127965;&#65039;</span>
+            <span class="thumb thumb-cancun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="17" cy="7" r="2.5" />
+                <path d="M3 16c2.5-2 5-2 7.5 0s5 2 7.5 0" />
+                <path d="M3 20c2.5-2 5-2 7.5 0s5 2 7.5 0" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>Canc&uacute;n Todo Incluido</strong>
-              <small>4 noches &middot; resort con vuelos</small>
+              <small>desde $3.990.000</small>
             </span>
-            <span class="destination-price">desde $3.990.000</span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Japon y que incluye?">
-            <span class="destination-emoji" aria-hidden="true">&#9961;&#65039;</span>
+            <span class="thumb thumb-japon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6c5-2.5 11-2.5 16 0" />
+                <path d="M5.5 10.5h13" />
+                <path d="M7.5 6.8V20" />
+                <path d="M16.5 6.8V20" />
+              </svg>
+            </span>
             <span class="destination-info">
               <strong>Jap&oacute;n Esencial</strong>
-              <small>8 noches &middot; Tokio y Kioto</small>
+              <small>desde $16.900.000</small>
             </span>
-            <span class="destination-price">desde $16.900.000</span>
           </button>
         </div>
 
         <div class="contact">
           <a href="https://wa.me/573116289002" target="_blank" rel="noopener">
-            WhatsApp 311 628 9002
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.4 8.4 0 0 1-9.3 8.4 8.6 8.6 0 0 1-3.7-1L3 20l1.1-4.8a8.4 8.4 0 1 1 16.9-3.7z" />
+            </svg>
+            311 628 9002
           </a>
           <span>hola@viajesandes.co &middot; @viajesandes.co</span>
         </div>
 
         <p class="tech-note">
-          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot; base
-          de conocimiento con 20 datos del negocio, con precios internacionales
-          basados en referencias reales del mercado colombiano.
+          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot; 20
+          datos del negocio con precios de referencia reales.
         </p>
       </section>
 
       <section class="panel chat-panel">
         <header>
           <div class="bot-identity">
-            <span class="bot-avatar" aria-hidden="true">&#9968;</span>
+            <span class="bot-avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
+                <circle cx="17.5" cy="5" r="1.6" />
+              </svg>
+            </span>
             <div>
               <strong>AndesBot</strong>
               <small id="apiStatus"><span class="dot"></span>Conectando...</small>
