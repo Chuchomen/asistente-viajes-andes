@@ -87,7 +87,7 @@ def build_full_knowledge_block(knowledge_base=None):
 
 def fallback_answer():
     return (
-        "No tengo ese dato en la base de conocimiento de Viajes Andes. "
+        "No tengo ese dato en la base de conocimiento de Viajes Andres. "
         "Para no inventarte informacion, te recomiendo escribir al WhatsApp "
         "311 628 9002 y un asesor lo confirma contigo."
     )

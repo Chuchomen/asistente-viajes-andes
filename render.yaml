@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: andesbot
+    name: andresbot
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt

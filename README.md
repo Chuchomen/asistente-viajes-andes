@@ -1,4 +1,4 @@
-# Viajes Andes - Agente AI con Flask y OpenAI
+# Viajes Andres - Agente AI con Flask y OpenAI
 
 Este proyecto resuelve el reto "El asistente que responde por tu negocio" con una app real en Python:
 
@@ -116,7 +116,7 @@ El reto pide un link publico para que la comunidad lo pruebe. Con Render:
 2. Entra a https://render.com y crea una cuenta (puedes usar tu cuenta de GitHub).
 3. Clic en "New" > "Blueprint" y selecciona tu repositorio: Render detecta `render.yaml` automaticamente.
 4. Cuando lo pida, escribe el valor de `OPENAI_API_KEY` (queda como variable de entorno secreta, nunca en el codigo).
-5. Espera el deploy. Tu link queda como `https://andesbot.onrender.com` (o similar).
+5. Espera el deploy. Tu link queda como `https://asistente-viajes-andes.onrender.com` (o similar).
 
 Nota: en el plan gratis el servidor se duerme tras 15 minutos sin uso; la primera respuesta despues de eso tarda ~30 segundos.
 
@@ -132,4 +132,4 @@ Nota: en el plan gratis el servidor se duerme tras 15 minutos sin uso; la primer
 
 ## Texto sugerido para Platzi
 
-Hola comunidad. Mi proyecto es AndesBot, un agente AI para Viajes Andes, una agencia de viajes boutique con destinos nacionales e internacionales. Lo construi con Python, Flask y la API de OpenAI (sin plantillas): el agente tiene una base de conocimiento editable con 20 datos del negocio (paquetes nacionales e internacionales con precios basados en referencias reales del mercado colombiano, pagos, reservas, cambios, cancelaciones, documentos, seguros y horarios) que se inyecta completa al modelo como unica fuente de verdad. Tiene memoria de conversacion para preguntas de seguimiento y, si le preguntas algo que no esta en su base, no inventa: admite que no lo sabe y deriva al WhatsApp de la agencia. Pruebenlo aqui: [TU LINK DE RENDER]
+Hola comunidad. Mi proyecto es AndresBot, un agente AI para Viajes Andres, una agencia de viajes boutique con destinos nacionales e internacionales. Lo construi con Python, Flask y la API de OpenAI (sin plantillas): el agente tiene una base de conocimiento editable con 20 datos del negocio (paquetes nacionales e internacionales con precios basados en referencias reales del mercado colombiano, pagos, reservas, cambios, cancelaciones, documentos, seguros y horarios) que se inyecta completa al modelo como unica fuente de verdad. Tiene memoria de conversacion para preguntas de seguimiento y, si le preguntas algo que no esta en su base, no inventa: admite que no lo sabe y deriva al WhatsApp de la agencia. Pruebenlo aqui: [TU LINK DE RENDER]

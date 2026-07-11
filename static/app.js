@@ -8,7 +8,7 @@ const resetButton = document.querySelector("#resetChat");
 
 const MAX_HISTORY = 12;
 const WELCOME =
-  "Hola, soy AndesBot 👋 Puedo ayudarte con paquetes, precios, pagos, reservas, documentos y politicas de Viajes Andes. ¿Que quieres saber?";
+  "Hola, soy AndresBot 👋 Puedo ayudarte con paquetes, precios, pagos, reservas, documentos y políticas de Viajes Andrés. ¿Qué quieres saber?";
 const AVATAR_SVG =
   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18 9 7l3.5 6L15 9l6 9z"/><circle cx="17.5" cy="5" r="1.6"/></svg>';
 

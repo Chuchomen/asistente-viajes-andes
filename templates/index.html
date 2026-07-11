@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Viajes Andes | AndesBot, tu asesor de viajes</title>
+    <title>Viajes Andr&eacute;s | AndresBot, tu asesor de viajes</title>
     <meta
       name="description"
-      content="AndesBot responde tus preguntas sobre paquetes, precios, pagos y reservas de Viajes Andes."
+      content="AndresBot responde tus preguntas sobre paquetes, precios, pagos y reservas de Viajes Andr&eacute;s."
     />
     <link
       rel="icon"
@@ -29,26 +29,31 @@
             </svg>
           </span>
           <div>
-            <strong>Viajes Andes</strong>
+            <strong>Viajes Andr&eacute;s</strong>
             <small>Agencia boutique &middot; Medell&iacute;n</small>
           </div>
         </div>
 
+        <div class="hero" aria-hidden="true">
+          <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="" class="hero-main" />
+          <div class="hero-side">
+            <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="" />
+            <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="" />
+          </div>
+          <span class="hero-caption">Colombia &middot; Latinoam&eacute;rica &middot; el mundo</span>
+        </div>
+
         <h1>Tu pr&oacute;ximo viaje empieza con una pregunta</h1>
         <p class="lead">
-          Preg&uacute;ntale a <strong>AndesBot</strong> por paquetes, precios,
-          pagos y reservas. Responde solo con datos verificados y, si no sabe
-          algo, lo admite.
+          Preg&uacute;ntale a <strong>AndresBot</strong> por paquetes, precios,
+          pagos y reservas. Solo responde con datos verificados.
         </p>
 
         <h2>Destinos destacados</h2>
         <div class="destinations">
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cartagena y que incluye?">
-            <span class="thumb thumb-cartagena" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="9" r="3" />
-                <path d="M3 17c3-2.4 6-2.4 9 0s6 2.4 9 0" />
-              </svg>
+            <span class="thumb thumb-cartagena">
+              <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="Cartagena" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>Cartagena Esencial</strong>
@@ -56,11 +61,8 @@
             </span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan al Eje Cafetero y que incluye?">
-            <span class="thumb thumb-eje" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 19C6 11 11 5 19 5c0 8-5 14-13 14z" />
-                <path d="M6 19c3-5 7-9 10-11" />
-              </svg>
+            <span class="thumb thumb-eje">
+              <img src="{{ url_for('static', filename='img/eje.jpg') }}" alt="Valle del Cocora" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>Eje Cafetero Natural</strong>
@@ -68,13 +70,8 @@
             </span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a San Andres y que incluye?">
-            <span class="thumb thumb-sanandres" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 20c0-5 .5-8 1-10" />
-                <path d="M14 10c-2-3-5-4-8-2.5" />
-                <path d="M14 10c-.3-3.4 1.5-6 5-6.5" />
-                <path d="M14 10c3-1.6 6-.6 7.5 1.5" />
-              </svg>
+            <span class="thumb thumb-sanandres">
+              <img src="{{ url_for('static', filename='img/sanandres.jpg') }}" alt="San Andres" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>San Andr&eacute;s Azul</strong>
@@ -82,11 +79,8 @@
             </span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Peru y que incluye?">
-            <span class="thumb thumb-peru" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 19 8 8l4 7 3-4.5L21 19z" />
-                <circle cx="18.5" cy="6" r="1.6" />
-              </svg>
+            <span class="thumb thumb-peru">
+              <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="Machu Picchu" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>Per&uacute; M&aacute;gico</strong>
@@ -94,12 +88,8 @@
             </span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cancun y que incluye?">
-            <span class="thumb thumb-cancun" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="17" cy="7" r="2.5" />
-                <path d="M3 16c2.5-2 5-2 7.5 0s5 2 7.5 0" />
-                <path d="M3 20c2.5-2 5-2 7.5 0s5 2 7.5 0" />
-              </svg>
+            <span class="thumb thumb-cancun">
+              <img src="{{ url_for('static', filename='img/cancun.jpg') }}" alt="Cancun" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>Canc&uacute;n Todo Incluido</strong>
@@ -107,13 +97,8 @@
             </span>
           </button>
           <button type="button" class="destination" data-question="Cuanto cuesta el plan a Japon y que incluye?">
-            <span class="thumb thumb-japon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 6c5-2.5 11-2.5 16 0" />
-                <path d="M5.5 10.5h13" />
-                <path d="M7.5 6.8V20" />
-                <path d="M16.5 6.8V20" />
-              </svg>
+            <span class="thumb thumb-japon">
+              <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="Monte Fuji" loading="lazy" />
             </span>
             <span class="destination-info">
               <strong>Jap&oacute;n Esencial</strong>
@@ -129,12 +114,12 @@
             </svg>
             311 628 9002
           </a>
-          <span>hola@viajesandes.co &middot; @viajesandes.co</span>
+          <span>hola@viajesandres.co &middot; @viajesandres.co</span>
         </div>
 
         <p class="tech-note">
-          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot; 20
-          datos del negocio con precios de referencia reales.
+          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot;
+          fotos de Wikimedia Commons.
         </p>
       </section>
 
@@ -148,7 +133,7 @@
               </svg>
             </span>
             <div>
-              <strong>AndesBot</strong>
+              <strong>AndresBot</strong>
               <small id="apiStatus"><span class="dot"></span>Conectando...</small>
             </div>
           </div>
