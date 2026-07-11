@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Viajes Andr&eacute;s | AndresBot, tu asesor de viajes</title>
+    <title>Viajes Andr&eacute;s | Agencia boutique de viajes</title>
     <meta
       name="description"
-      content="AndresBot responde tus preguntas sobre paquetes, precios, pagos y reservas de Viajes Andr&eacute;s."
+      content="Viajes Andr&eacute;s dise&ntilde;a paquetes nacionales e internacionales con asesor&iacute;a personalizada, pagos flexibles y AndresBot para resolver dudas."
     />
     <link
       rel="icon"
@@ -18,154 +18,113 @@
     />
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
   </head>
-  <body>
-    <main class="layout">
-      <section class="panel info-panel">
-        <div class="brand">
-          <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
-              <circle cx="17.5" cy="5" r="1.6" />
-            </svg>
-          </span>
-          <div>
-            <strong>Viajes Andr&eacute;s</strong>
-            <small>Agencia boutique &middot; Medell&iacute;n</small>
+  <body class="site-body">
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a class="site-brand" href="{{ url_for('home') }}">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
+            <circle cx="17.5" cy="5" r="1.6" />
+          </svg>
+        </span>
+        <span>Viajes Andr&eacute;s</span>
+      </a>
+      <div class="nav-links">
+        <a href="#destinos">Destinos</a>
+        <a href="#confianza">Confianza</a>
+        <a class="nav-action" href="{{ url_for('chat_page') }}">Abrir AndresBot</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="business-hero">
+        <div class="business-copy">
+          <p class="eyebrow">Agencia boutique en Medell&iacute;n</p>
+          <h1>Viajes Andr&eacute;s</h1>
+          <p>
+            Dise&ntilde;amos viajes por Colombia, Latinoam&eacute;rica y destinos
+            internacionales con asesor&iacute;a cercana, paquetes claros y
+            acompa&ntilde;amiento antes de reservar.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="{{ url_for('chat_page') }}">Consultar con AndresBot</a>
+            <a class="secondary-action" href="#destinos">Ver destinos</a>
           </div>
         </div>
-
-        <div class="hero" aria-hidden="true">
-          <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="" class="hero-main" />
-          <div class="hero-side">
-            <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="" />
-            <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="" />
-          </div>
-          <span class="hero-caption">Colombia &middot; Latinoam&eacute;rica &middot; el mundo</span>
+        <div class="business-gallery" aria-label="Destinos de Viajes Andres">
+          <img class="gallery-main" src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="Cartagena" />
+          <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="Machu Picchu" />
+          <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="Monte Fuji" />
         </div>
-
-        <h1>Tu pr&oacute;ximo viaje empieza con una pregunta</h1>
-        <p class="lead">
-          Preg&uacute;ntale a <strong>AndresBot</strong> por paquetes, precios,
-          pagos y reservas. Solo responde con datos verificados.
-        </p>
-
-        <h2>Destinos destacados</h2>
-        <div class="destinations">
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cartagena y que incluye?">
-            <span class="thumb thumb-cartagena">
-              <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="Cartagena" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>Cartagena Esencial</strong>
-              <small>desde $1.450.000</small>
-            </span>
-          </button>
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan al Eje Cafetero y que incluye?">
-            <span class="thumb thumb-eje">
-              <img src="{{ url_for('static', filename='img/eje.jpg') }}" alt="Valle del Cocora" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>Eje Cafetero Natural</strong>
-              <small>desde $1.180.000</small>
-            </span>
-          </button>
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan a San Andres y que incluye?">
-            <span class="thumb thumb-sanandres">
-              <img src="{{ url_for('static', filename='img/sanandres.jpg') }}" alt="San Andres" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>San Andr&eacute;s Azul</strong>
-              <small>desde $1.690.000</small>
-            </span>
-          </button>
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Peru y que incluye?">
-            <span class="thumb thumb-peru">
-              <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="Machu Picchu" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>Per&uacute; M&aacute;gico</strong>
-              <small>desde $3.850.000</small>
-            </span>
-          </button>
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cancun y que incluye?">
-            <span class="thumb thumb-cancun">
-              <img src="{{ url_for('static', filename='img/cancun.jpg') }}" alt="Cancun" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>Canc&uacute;n Todo Incluido</strong>
-              <small>desde $3.990.000</small>
-            </span>
-          </button>
-          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Japon y que incluye?">
-            <span class="thumb thumb-japon">
-              <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="Monte Fuji" loading="lazy" />
-            </span>
-            <span class="destination-info">
-              <strong>Jap&oacute;n Esencial</strong>
-              <small>desde $16.900.000</small>
-            </span>
-          </button>
-        </div>
-
-        <div class="contact">
-          <a href="https://wa.me/573116289002" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 11.5a8.4 8.4 0 0 1-9.3 8.4 8.6 8.6 0 0 1-3.7-1L3 20l1.1-4.8a8.4 8.4 0 1 1 16.9-3.7z" />
-            </svg>
-            311 628 9002
-          </a>
-          <span>hola@viajesandres.co &middot; @viajesandres.co</span>
-        </div>
-
-        <p class="tech-note">
-          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot;
-          fotos de Wikimedia Commons.
-        </p>
       </section>
 
-      <section class="panel chat-panel">
-        <header>
-          <div class="bot-identity">
-            <span class="bot-avatar" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
-                <circle cx="17.5" cy="5" r="1.6" />
-              </svg>
-            </span>
-            <div>
-              <strong>AndresBot</strong>
-              <small id="apiStatus"><span class="dot"></span>Conectando...</small>
-            </div>
-          </div>
-          <button type="button" id="resetChat" title="Empezar una conversacion nueva">
-            Nueva conversaci&oacute;n
-          </button>
-        </header>
+      <section class="section-strip" id="destinos">
+        <div class="section-heading">
+          <p class="eyebrow">Paquetes destacados</p>
+          <h2>Destinos que puedes cotizar</h2>
+        </div>
+        <div class="package-grid">
+          <article class="package-card">
+            <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="Cartagena" />
+            <span>Desde $1.450.000 COP</span>
+            <h3>Cartagena Esencial</h3>
+            <p>3 noches, desayunos, traslados y tour por la ciudad amurallada.</p>
+          </article>
+          <article class="package-card">
+            <img src="{{ url_for('static', filename='img/eje.jpg') }}" alt="Valle del Cocora" />
+            <span>Desde $1.180.000 COP</span>
+            <h3>Eje Cafetero Natural</h3>
+            <p>Finca cafetera, Valle del Cocora, desayunos y transporte interno.</p>
+          </article>
+          <article class="package-card">
+            <img src="{{ url_for('static', filename='img/sanandres.jpg') }}" alt="San Andres" />
+            <span>Desde $1.690.000 COP</span>
+            <h3>San Andr&eacute;s Azul</h3>
+            <p>4 noches, asistencia m&eacute;dica, tour al acuario y vuelta a la isla.</p>
+          </article>
+          <article class="package-card">
+            <img src="{{ url_for('static', filename='img/cancun.jpg') }}" alt="Cancun" />
+            <span>Desde $3.990.000 COP</span>
+            <h3>Canc&uacute;n Todo Incluido</h3>
+            <p>Vuelos desde Bogot&aacute;, resort todo incluido, traslados y asistencia.</p>
+          </article>
+        </div>
+      </section>
 
-        <div class="messages" id="messages" aria-live="polite"></div>
+      <section class="trust-section" id="confianza">
+        <div>
+          <p class="eyebrow">C&oacute;mo trabajamos</p>
+          <h2>Informaci&oacute;n clara antes de pagar</h2>
+          <p>
+            AndresBot usa la base de conocimiento del negocio para responder
+            sobre precios, pagos, reservas, documentos y pol&iacute;ticas. Si un
+            dato no est&aacute; documentado, lo deriva a un asesor para evitar
+            promesas inventadas.
+          </p>
+        </div>
+        <div class="trust-list">
+          <article>
+            <strong>Reserva con 30%</strong>
+            <span>Separa tu cupo y paga el saldo 20 d&iacute;as antes del viaje.</span>
+          </article>
+          <article>
+            <strong>Pagos flexibles</strong>
+            <span>Bancolombia, Nequi, Daviplata, tarjeta d&eacute;bito y cr&eacute;dito.</span>
+          </article>
+          <article>
+            <strong>Asistencia incluida</strong>
+            <span>Los paquetes incluyen asistencia m&eacute;dica b&aacute;sica de viaje.</span>
+          </article>
+        </div>
+      </section>
 
-        <div class="suggestions" id="quickPrompts"></div>
-
-        <form id="chatForm" class="composer">
-          <label class="sr-only" for="message">Pregunta para el agente</label>
-          <input
-            id="message"
-            name="message"
-            autocomplete="off"
-            maxlength="500"
-            placeholder="Escribe tu pregunta, por ejemplo: puedo pagar con Nequi?"
-            required
-          />
-          <button type="submit" id="sendButton" aria-label="Enviar pregunta">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M22 2 11 13" />
-              <path d="M22 2 15 22l-4-9-9-4z" />
-            </svg>
-          </button>
-        </form>
+      <section class="cta-band">
+        <div>
+          <p class="eyebrow">Atenci&oacute;n personalizada</p>
+          <h2>Cu&eacute;ntanos qu&eacute; viaje tienes en mente</h2>
+        </div>
+        <a class="primary-action" href="{{ url_for('chat_page') }}">Abrir AndresBot</a>
       </section>
     </main>
-
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@ Este proyecto resuelve el reto "El asistente que responde por tu negocio" con un
 - Integracion con OpenAI usando la Responses API.
 - El modelo recibe la base de conocimiento completa como unica fuente de verdad, asi entiende parafrasis ("me devuelven la plata si cancelo?") sin depender de palabras clave exactas.
 - Respuesta segura cuando el agente no sabe algo: lo admite y deriva al WhatsApp de la agencia.
+- Pagina del negocio en `/` y chat del agente en `/chat`.
 - Listo para publicar en Render con `gunicorn` y `render.yaml`.
 
 ## Estructura
@@ -21,7 +22,8 @@ asistente-viajes-andes/
 ├── requirements.txt
 ├── .env.example
 ├── templates/
-│   └── index.html
+│   ├── index.html
+│   └── chat.html
 ├── static/
 │   ├── app.js
 │   └── styles.css
@@ -64,6 +66,14 @@ Luego abre:
 
 ```text
 http://127.0.0.1:5000
+```
+
+La pagina principal del negocio queda en `/` y el chat del agente queda en `/chat`.
+
+## Como correr las pruebas
+
+```powershell
+python -m unittest discover -v
 ```
 
 ## Como funciona el agente

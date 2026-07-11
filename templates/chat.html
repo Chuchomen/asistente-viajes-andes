@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viajes Andr&eacute;s | AndresBot, tu asesor de viajes</title>
+    <meta
+      name="description"
+      content="AndresBot responde tus preguntas sobre paquetes, precios, pagos y reservas de Viajes Andr&eacute;s."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9968;</text></svg>"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel info-panel">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
+              <circle cx="17.5" cy="5" r="1.6" />
+            </svg>
+          </span>
+          <div>
+            <strong>Viajes Andr&eacute;s</strong>
+            <small>Agencia boutique &middot; Medell&iacute;n</small>
+          </div>
+        </div>
+
+        <div class="hero" aria-hidden="true">
+          <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="" class="hero-main" />
+          <div class="hero-side">
+            <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="" />
+            <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="" />
+          </div>
+          <span class="hero-caption">Colombia &middot; Latinoam&eacute;rica &middot; el mundo</span>
+        </div>
+
+        <h1>Consulta tu pr&oacute;ximo viaje con AndresBot</h1>
+        <p class="lead">
+          Preg&uacute;ntale por paquetes, precios, pagos y reservas. El agente
+          responde con datos verificados de Viajes Andr&eacute;s.
+        </p>
+
+        <h2>Destinos destacados</h2>
+        <div class="destinations">
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cartagena y que incluye?">
+            <span class="thumb thumb-cartagena">
+              <img src="{{ url_for('static', filename='img/cartagena.jpg') }}" alt="Cartagena" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>Cartagena Esencial</strong>
+              <small>desde $1.450.000</small>
+            </span>
+          </button>
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan al Eje Cafetero y que incluye?">
+            <span class="thumb thumb-eje">
+              <img src="{{ url_for('static', filename='img/eje.jpg') }}" alt="Valle del Cocora" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>Eje Cafetero Natural</strong>
+              <small>desde $1.180.000</small>
+            </span>
+          </button>
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan a San Andres y que incluye?">
+            <span class="thumb thumb-sanandres">
+              <img src="{{ url_for('static', filename='img/sanandres.jpg') }}" alt="San Andres" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>San Andr&eacute;s Azul</strong>
+              <small>desde $1.690.000</small>
+            </span>
+          </button>
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Peru y que incluye?">
+            <span class="thumb thumb-peru">
+              <img src="{{ url_for('static', filename='img/peru.jpg') }}" alt="Machu Picchu" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>Per&uacute; M&aacute;gico</strong>
+              <small>desde $3.850.000</small>
+            </span>
+          </button>
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Cancun y que incluye?">
+            <span class="thumb thumb-cancun">
+              <img src="{{ url_for('static', filename='img/cancun.jpg') }}" alt="Cancun" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>Canc&uacute;n Todo Incluido</strong>
+              <small>desde $3.990.000</small>
+            </span>
+          </button>
+          <button type="button" class="destination" data-question="Cuanto cuesta el plan a Japon y que incluye?">
+            <span class="thumb thumb-japon">
+              <img src="{{ url_for('static', filename='img/japon.jpg') }}" alt="Monte Fuji" loading="lazy" />
+            </span>
+            <span class="destination-info">
+              <strong>Jap&oacute;n Esencial</strong>
+              <small>desde $16.900.000</small>
+            </span>
+          </button>
+        </div>
+
+        <div class="contact">
+          <a href="https://wa.me/573116289002" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.4 8.4 0 0 1-9.3 8.4 8.6 8.6 0 0 1-3.7-1L3 20l1.1-4.8a8.4 8.4 0 1 1 16.9-3.7z" />
+            </svg>
+            311 628 9002
+          </a>
+          <span>hola@viajesandres.co &middot; @viajesandres.co</span>
+        </div>
+
+        <p class="tech-note">
+          Proyecto del reto Platzi &middot; Python + Flask + OpenAI &middot;
+          fotos de Wikimedia Commons.
+        </p>
+      </section>
+
+      <section class="panel chat-panel">
+        <header>
+          <div class="bot-identity">
+            <span class="bot-avatar" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18 9 7l3.5 6L15 9l6 9z" />
+                <circle cx="17.5" cy="5" r="1.6" />
+              </svg>
+            </span>
+            <div>
+              <strong>AndresBot</strong>
+              <small id="apiStatus"><span class="dot"></span>Conectando...</small>
+            </div>
+          </div>
+          <button type="button" id="resetChat" title="Empezar una conversacion nueva">
+            Nueva conversaci&oacute;n
+          </button>
+        </header>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+
+        <div class="suggestions" id="quickPrompts"></div>
+
+        <form id="chatForm" class="composer">
+          <label class="sr-only" for="message">Pregunta para el agente</label>
+          <input
+            id="message"
+            name="message"
+            autocomplete="off"
+            maxlength="500"
+            placeholder="Escribe tu pregunta, por ejemplo: puedo pagar con Nequi?"
+            required
+          />
+          <button type="submit" id="sendButton" aria-label="Enviar pregunta">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 2 11 13" />
+              <path d="M22 2 15 22l-4-9-9-4z" />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

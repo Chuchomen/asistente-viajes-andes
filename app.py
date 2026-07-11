@@ -93,6 +93,11 @@ def home():
     return render_template("index.html")
 
 
+@app.get("/chat")
+def chat_page():
+    return render_template("chat.html")
+
+
 @app.get("/api/health")
 def health():
     return jsonify(
