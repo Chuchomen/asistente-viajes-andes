@@ -137,9 +137,14 @@
               <small id="apiStatus"><span class="dot"></span>Conectando...</small>
             </div>
           </div>
-          <button type="button" id="resetChat" title="Empezar una conversacion nueva">
-            Nueva conversaci&oacute;n
-          </button>
+          <div class="chat-actions">
+            <a href="{{ url_for('home') }}" class="home-link" title="Volver al inicio">
+              Inicio
+            </a>
+            <button type="button" id="resetChat" title="Empezar una conversacion nueva">
+              Nueva conversaci&oacute;n
+            </button>
+          </div>
         </header>
 
         <div class="messages" id="messages" aria-live="polite"></div>

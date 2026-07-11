@@ -675,6 +675,14 @@ h2 {
   box-shadow: 0 0 0 3px rgba(244, 185, 90, 0.28);
 }
 
+.chat-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.home-link,
 #resetChat {
   padding: 8px 12px;
   border: 1px solid var(--line);
@@ -683,11 +691,13 @@ h2 {
   background: var(--white);
   font-size: 0.78rem;
   font-weight: 700;
+  text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
+.home-link:hover,
 #resetChat:hover {
   color: var(--accent-dark);
   border-color: var(--accent);
@@ -1031,10 +1041,19 @@ h2 {
   }
 
   .chat-panel header {
+    align-items: flex-start;
+    flex-direction: column;
     padding: 14px 14px;
   }
 
+  .chat-actions {
+    width: 100%;
+  }
+
+  .home-link,
   #resetChat {
+    flex: 1;
+    text-align: center;
     padding: 7px 10px;
     font-size: 0.72rem;
   }
