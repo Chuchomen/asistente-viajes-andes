@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ubicacion",
+    "category": "Atencion",
+    "title": "Ubicacion y atencion virtual",
+    "keywords": ["ubicacion", "direccion", "oficina", "sede", "videollamada", "medellin"],
+    "answer": "La oficina queda en la Carrera 43A #7-50, El Poblado, Medellin. Tambien atendemos por videollamada a clientes de otras ciudades."
+  },
+  {
+    "id": "horarios",
+    "category": "Atencion",
+    "title": "Horarios de atencion",
+    "keywords": ["horario", "atienden", "abren", "cierran", "sabado", "domingo", "festivo"],
+    "answer": "Atendemos de lunes a viernes de 8:00 a.m. a 6:00 p.m. y sabados de 9:00 a.m. a 1:00 p.m. No atendemos domingos ni festivos."
+  },
+  {
+    "id": "cartagena",
+    "category": "Paquetes",
+    "title": "Paquete Cartagena Esencial",
+    "keywords": ["cartagena", "playa", "caribe", "muralla", "islas", "ciudad amurallada"],
+    "answer": "El plan Cartagena Esencial cuesta desde $1.450.000 COP por persona. Incluye 3 noches de hotel, desayunos, traslado aeropuerto-hotel-aeropuerto y tour por la ciudad amurallada."
+  },
+  {
+    "id": "eje-cafetero",
+    "category": "Paquetes",
+    "title": "Paquete Eje Cafetero Natural",
+    "keywords": ["eje cafetero", "salento", "cocora", "cafe", "filandia", "pereira"],
+    "answer": "El plan Eje Cafetero Natural cuesta desde $1.180.000 COP por persona. Incluye 3 noches, desayunos, visita a finca cafetera, Valle del Cocora y transporte terrestre interno."
+  },
+  {
+    "id": "san-andres",
+    "category": "Paquetes",
+    "title": "Paquete San Andres Azul",
+    "keywords": ["san andres", "isla", "johnny cay", "acuario", "mar", "playa"],
+    "answer": "El plan San Andres Azul cuesta desde $1.690.000 COP por persona. Incluye 4 noches, desayunos, tarjeta de asistencia medica, tour al acuario y vuelta a la isla."
+  },
+  {
+    "id": "peru",
+    "category": "Paquetes",
+    "title": "Paquete Peru Magico",
+    "keywords": ["peru", "machu picchu", "cusco", "lima", "internacional", "tren"],
+    "answer": "El plan Peru Magico cuesta desde $3.850.000 COP por persona. Incluye 5 noches, desayunos, traslados, city tour en Cusco, entrada a Machu Picchu y tren turistico."
+  },
+  {
+    "id": "cancun",
+    "category": "Internacionales",
+    "title": "Paquete Cancun Todo Incluido",
+    "keywords": ["cancun", "mexico", "riviera maya", "todo incluido", "resort"],
+    "answer": "El plan Cancun Todo Incluido cuesta desde $3.990.000 COP por persona. Incluye vuelos desde Bogota, 4 noches en resort todo incluido (alimentacion y bebidas), traslados y asistencia medica. Precio de referencia: la cotizacion final depende de temporada y disponibilidad."
+  },
+  {
+    "id": "punta-cana",
+    "category": "Internacionales",
+    "title": "Paquete Punta Cana Caribe",
+    "keywords": ["punta cana", "republica dominicana", "dominicana", "bavaro"],
+    "answer": "El plan Punta Cana Caribe cuesta desde $3.590.000 COP por persona. Incluye vuelos desde Bogota, 4 noches en resort todo incluido, traslados y asistencia medica. Precio de referencia: la cotizacion final depende de temporada y disponibilidad."
+  },
+  {
+    "id": "europa",
+    "category": "Internacionales",
+    "title": "Paquete Europa Clasica",
+    "keywords": ["europa", "madrid", "paris", "roma", "espana", "francia", "italia"],
+    "answer": "El plan Europa Clasica cuesta desde $11.500.000 COP por persona. Incluye vuelos, 9 noches en Madrid, Paris y Roma, desayunos, traslados, transporte entre ciudades y visitas panoramicas. Precio de referencia: la cotizacion final depende de temporada y disponibilidad."
+  },
+  {
+    "id": "japon",
+    "category": "Internacionales",
+    "title": "Paquete Japon Esencial",
+    "keywords": ["japon", "tokio", "kioto", "osaka", "asia", "cerezos"],
+    "answer": "El plan Japon Esencial cuesta desde $16.900.000 COP por persona. Incluye vuelos ida y regreso, 8 noches en Tokio y Kioto, desayunos, traslados, tren bala y visitas guiadas. Precio de referencia: la temporada de cerezos (marzo-abril) y el otono son las mas altas; la cotizacion final la confirma un asesor."
+  },
+  {
+    "id": "bajo-solicitud",
+    "category": "Atencion",
+    "title": "Destinos bajo solicitud",
+    "keywords": ["otro destino", "cotizacion", "medida", "personalizado", "catalogo", "crucero", "luna de miel"],
+    "answer": "Si el destino que buscas no esta en el catalogo (otros paises, cruceros, lunas de miel o planes a la medida), lo cotizamos bajo solicitud: un asesor arma el plan segun tus fechas, presupuesto y numero de viajeros. Escribenos al WhatsApp 310 245 7788."
+  },
+  {
+    "id": "incluye",
+    "category": "Paquetes",
+    "title": "Que incluyen los planes",
+    "keywords": ["incluye", "incluido", "hotel", "traslado", "desayuno", "tours", "tiquetes"],
+    "answer": "La mayoria de planes incluye alojamiento, desayunos, traslados indicados en el itinerario y asistencia medica de viaje. Los tiquetes aereos se cotizan aparte salvo que el plan diga lo contrario."
+  },
+  {
+    "id": "no-incluye",
+    "category": "Paquetes",
+    "title": "Que no incluyen los planes",
+    "keywords": ["no incluye", "excluye", "almuerzo", "cena", "gastos", "impuestos", "propinas"],
+    "answer": "Los planes no incluyen gastos personales, propinas, almuerzos, cenas, impuestos hoteleros no especificados ni actividades opcionales fuera del itinerario."
+  },
+  {
+    "id": "pagos",
+    "category": "Pagos",
+    "title": "Metodos de pago",
+    "keywords": ["pago", "pagar", "tarjeta", "nequi", "daviplata", "transferencia", "credito", "bancolombia"],
+    "answer": "Aceptamos transferencia Bancolombia, Nequi, Daviplata, tarjetas debito y credito. Los pagos con tarjeta de credito pueden diferirse segun las condiciones del banco."
+  },
+  {
+    "id": "reserva",
+    "category": "Reservas",
+    "title": "Reserva y abonos",
+    "keywords": ["reserva", "separar", "abono", "cupo", "anticipo", "saldo", "pagar"],
+    "answer": "Para separar un cupo se paga el 30% del valor del plan. El saldo debe quedar pago 20 dias antes de la fecha de viaje."
+  },
+  {
+    "id": "cambios",
+    "category": "Politicas",
+    "title": "Cambios de fecha",
+    "keywords": ["cambio", "cambiar", "fecha", "aplazar", "reprogramar"],
+    "answer": "Los cambios de fecha se pueden solicitar hasta 15 dias antes del viaje. Pueden aplicar diferencias tarifarias del hotel, aerolinea u operador."
+  },
+  {
+    "id": "cancelaciones",
+    "category": "Politicas",
+    "title": "Cancelaciones y devoluciones",
+    "keywords": ["cancelar", "cancelacion", "devolucion", "reembolso"],
+    "answer": "Si cancelas con mas de 30 dias de anticipacion, devolvemos el 80% del valor abonado. Con 30 dias o menos, la devolucion depende de las politicas del proveedor."
+  },
+  {
+    "id": "documentos",
+    "category": "Documentos",
+    "title": "Documentos de viaje",
+    "keywords": ["documento", "cedula", "pasaporte", "visa", "menor", "permiso"],
+    "answer": "Para viajes nacionales necesitas cedula o tarjeta de identidad. Para viajes internacionales necesitas pasaporte vigente; visas o permisos dependen del destino."
+  },
+  {
+    "id": "seguro",
+    "category": "Asistencia",
+    "title": "Asistencia medica",
+    "keywords": ["seguro", "asistencia", "medica", "salud", "emergencia", "cobertura"],
+    "answer": "Todos los paquetes incluyen asistencia medica basica de viaje. Podemos cotizar una cobertura ampliada si el cliente lo solicita antes de reservar."
+  },
+  {
+    "id": "contacto",
+    "category": "Contacto",
+    "title": "Canales de contacto",
+    "keywords": ["contacto", "whatsapp", "telefono", "instagram", "correo", "email"],
+    "answer": "Puedes escribirnos al WhatsApp 310 245 7788, al correo hola@viajesandes.co o en Instagram como @viajesandes.co."
+  }
+]

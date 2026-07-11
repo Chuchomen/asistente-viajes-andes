@@ -1,0 +1,13 @@
+# Secretos: nunca subir la API key
+.env
+
+# Entorno virtual y cache de Python
+.venv/
+__pycache__/
+*.pyc
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
